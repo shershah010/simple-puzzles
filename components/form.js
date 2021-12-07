@@ -8,7 +8,13 @@ export default function Form({ hashedUsername, hashedPassword, target }) {
     const valid = validate(event.target.username.value, hashedUsername, event.target.password.value, hashedPassword)
     console.log(valid)
     if (valid) {
-      Router.push('/puzzles/' + target)
+      event.target.username.value = ''
+      event.target.password.value = ''
+      if (target.includes("congratulations")) {
+        Router.push(target)
+      } else {
+        Router.push('/puzzles/' + target)
+      }
     } else {
       alert("Incorrect")   
     }

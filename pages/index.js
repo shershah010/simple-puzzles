@@ -1,18 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-import { getSortedPuzzleData } from '../lib/puzzles'
-
-export async function getStaticProps() {
-  const allPuzzleData = getSortedPuzzleData()
-  return {
-    props: {
-      allPuzzleData
-    }
-  }
-}
-
-export default function Home({ allPuzzleData }) {
+export default function Home() {
   return (
     <>
       <Head>
