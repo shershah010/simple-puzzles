@@ -10,17 +10,18 @@ import { getAllPuzzleIds, getPuzzleData } from '../../lib/puzzles'
 export default function Puzzle({ puzzleData }) {
   return (
     <Layout>
-      <h3 className={styles.title}>{ puzzleData.title }</h3>
-      <Image 
-          className={styles.image}
-          src={ "/images/" + puzzleData.image + ".bmp" }
-          alt={ puzzleData.alt }
-          title={ puzzleData.alt }
-          height={500}
-          width={500}
-        />
-        <p className={styles.hint}>{ puzzleData.hint }</p>
-        <Form hashedUsername={ puzzleData.username } hashedPassword={ puzzleData.password } target={ puzzleData.target } ></Form>
+      <h3 className={styles.center}>{ puzzleData.title }</h3>
+      <div className={styles.center}>
+        <Image 
+            src={ "/images/" + puzzleData.image + ".bmp" }
+            alt={ puzzleData.alt }
+            title={ puzzleData.alt }
+            height={500}
+            width={500}
+          />
+      </div>
+      <p className={styles.center}>{ puzzleData.hint }</p>
+      <Form hashedUsername={ puzzleData.username } hashedPassword={ puzzleData.password } target={ puzzleData.target } ></Form>
     </Layout>
   )
   
