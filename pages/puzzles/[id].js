@@ -13,7 +13,7 @@ export default function Puzzle({ puzzleData }) {
       <h3 className={styles.title}>{ puzzleData.title }</h3>
       <Image 
           className={styles.image}
-          src={ "/images/" + puzzleData.image + ".jpg" }
+          src={ "/images/" + puzzleData.image + ".bmp" }
           alt={ puzzleData.alt }
           title={ puzzleData.alt }
           height={500}

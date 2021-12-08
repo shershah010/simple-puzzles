@@ -1,5 +1,5 @@
 ---
-title: 'The Key has NxM dimensions'
+title: 'The Key has NxM Dimensions'
 image: 'puzzle-two'
 alt: 'mnhkpbd cbgpbd'
 hint: 'le chiffrage indéchiffrable'
